@@ -1,4 +1,4 @@
-# ⚡ EV Charging Demand Forecasting for Indian Metro Cities
+# EV Charging Demand Forecasting for Indian Metro Cities
 
 <div align="center">
 
@@ -9,36 +9,36 @@
 
 **Advanced ML Platform for Predicting EV Charging Demand Across Indian Metropolitan Cities**
 
-[Installation](#-installation) • [Quick Start](#-quick-start) • [Features](#-features) • [Architecture](#-architecture) • [Results](#-results)
+[Installation](#installation) • [Quick Start](#quick-start) • [Features](#features) • [Architecture](#architecture) • [Results](#results)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Motivation & Problem Statement](#-motivation--problem-statement)
-- [Features & Capabilities](#-features--capabilities)
-- [Technology Stack](#-technology-stack)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Project Structure](#-project-structure)
-- [How It Works](#-how-it-works)
-- [Model Architecture](#-model-architecture)
-- [Results & Performance](#-results--performance)
-- [Configuration](#-configuration)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Project Overview](#project-overview)
+- [Motivation & Problem Statement](#motivation--problem-statement)
+- [Features & Capabilities](#features--capabilities)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [How It Works](#how-it-works)
+- [Model Architecture](#model-architecture)
+- [Results & Performance](#results--performance)
+- [Configuration](#configuration)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 **EV Charging Demand Forecasting for Indian Metro Cities** is an end-to-end machine learning platform designed to predict electric vehicle (EV) charging demand across major Indian metropolitan areas and their unique urban zones. This intelligent system helps power utilities, charging network operators, and grid management authorities optimize infrastructure planning and implement smart charging strategies.
 
-### 🌍 Coverage
+### Coverage
 
 | City          | Zones   | Region              | Population |
 | ------------- | ------- | ------------------- | ---------- |
@@ -50,44 +50,44 @@
 
 **Total Coverage: 25 urban zones across 5 major Indian cities**
 
-### 🎯 Key Highlights
+### Key Highlights
 
-- ✅ **Multi-City Coverage**: 5 major Indian metropolitan areas
-- ✅ **Zone-Level Precision**: 25 distinct charging zones with unique demand patterns
-- ✅ **Dual ML Models**: XGBoost (primary) + Facebook Prophet (baseline validation)
-- ✅ **Real-time Dashboard**: Interactive Streamlit web interface
-- ✅ **Weather Integration**: Live OpenWeather API data
-- ✅ **Scenario Planning**: Smart charging simulation for EV adoption growth
-- ✅ **Explainability**: SHAP analysis for feature importance
-- ✅ **Production Ready**: Automated pipeline with error handling
+- Multi-City Coverage: 5 major Indian metropolitan areas
+- Zone-Level Precision: 25 distinct charging zones with unique demand patterns
+- Dual ML Models: XGBoost (primary) + Facebook Prophet (baseline validation)
+- Real-time Dashboard: Interactive Streamlit web interface
+- Weather Integration: Live OpenWeather API data
+- Scenario Planning: Smart charging simulation for EV adoption growth
+- Explainability: SHAP analysis for feature importance
+- Production Ready: Automated pipeline with error handling
 
 ---
 
-## 🔋 Motivation & Problem Statement
+## Motivation & Problem Statement
 
 ### The Challenge
 
 The rapid adoption of electric vehicles (EVs) in India presents significant challenges for power distribution networks (DISCOMs):
 
-#### 1. **Grid Overload Risk**
+#### 1. Grid Overload Risk
 
 - EV charging demand spikes during peak evening hours (18:00-22:00)
 - Concurrent residential load + EV charging can overwhelm transformers
 - Lack of predictive capacity planning leads to blackouts and grid instability
 
-#### 2. **Infrastructure Investment Uncertainty**
+#### 2. Infrastructure Investment Uncertainty
 
 - DISCOMs must decide where to install charging infrastructure
 - Inaccurate demand forecasts lead to underutilization or insufficient capacity
 - Billions of rupees at stake in capacity planning decisions
 
-#### 3. **Charging Network Optimization**
+#### 3. Charging Network Optimization
 
 - Charging Point Operators (CPOs) need zone-level demand patterns
 - Manual site selection is inefficient and error-prone
 - Real-time demand fluctuations require adaptive strategies
 
-#### 4. **Complex Demand Variability**
+#### 4. Complex Demand Variability
 
 EV charging demand varies across multiple dimensions:
 
@@ -97,19 +97,19 @@ EV charging demand varies across multiple dimensions:
 - **Weather-Dependent**: Extreme heat, rain affect both demand and supply
 - **Geographic**: Different zones have vastly different usage patterns
 
-### 📊 Solution Delivered
+### Solution Delivered
 
 This platform provides:
 
-✅ **Accurate Demand Forecasting**: 24-hour ahead predictions at zone-level precision
-✅ **Intelligent Capacity Planning**: Data-driven infrastructure investment guidance
-✅ **Smart Charging Strategies**: Real-time demand simulation and optimization
-✅ **Transparent Decision Making**: SHAP-based explainability for stakeholders
-✅ **Scalable Architecture**: Easily extensible to new cities and zones
+- **Accurate Demand Forecasting**: 24-hour ahead predictions at zone-level precision
+- **Intelligent Capacity Planning**: Data-driven infrastructure investment guidance
+- **Smart Charging Strategies**: Real-time demand simulation and optimization
+- **Transparent Decision Making**: SHAP-based explainability for stakeholders
+- **Scalable Architecture**: Easily extensible to new cities and zones
 
 ---
 
-## 🚀 Features & Capabilities
+## Features & Capabilities
 
 ### Core Features
 
@@ -126,16 +126,16 @@ This platform provides:
 
 ### Dashboard Features
 
-- 📊 **Real-time Charts**: Hourly demand trends and forecasts
-- 🗺️ **Geographic Heatmaps**: Zone-level demand visualization
-- 📈 **Metrics Dashboard**: MAE, RMSE, MAPE for all models
-- 🔍 **Feature Analysis**: SHAP importance plots
-- 📋 **Zone Comparison**: Side-by-side demand patterns
-- ⚙️ **Scenario Planning**: Interactive growth simulation
+- **Real-time Charts**: Hourly demand trends and forecasts
+- **Geographic Heatmaps**: Zone-level demand visualization
+- **Metrics Dashboard**: MAE, RMSE, MAPE for all models
+- **Feature Analysis**: SHAP importance plots
+- **Zone Comparison**: Side-by-side demand patterns
+- **Scenario Planning**: Interactive growth simulation
 
 ---
 
-## 💻 Technology Stack
+## Technology Stack
 
 ### Machine Learning & Data Science
 
@@ -169,7 +169,7 @@ This platform provides:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -226,12 +226,12 @@ numpy                - Numerical computing
 ### Step 4: Verify Installation
 
 ```bash
-python -c "import pandas, numpy, xgboost, prophet, streamlit; print('✅ All dependencies installed!')"
+python -c "import pandas, numpy, xgboost, prophet, streamlit; print('All dependencies installed!')"
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: Automated Execution (Recommended)
 
@@ -266,7 +266,7 @@ python src/train.py
 streamlit run src/dashboard.py
 ```
 
-### ⏱️ Expected Execution Time
+### Expected Execution Time
 
 | Stage                   | Duration | Notes                                |
 | ----------------------- | -------- | ------------------------------------ |
@@ -278,67 +278,63 @@ streamlit run src/dashboard.py
 | **TOTAL (First Run)**   | ~20 min  | With API delays                      |
 | **Subsequent Runs**     | ~8 min   | Cached data                          |
 
-### 📊 Output
+### Output
 
 After execution, you'll have:
 
 **Generated Data:**
 
-- ✅ `data/raw_demand_data.csv` - 438,600 weather-demand records (25 zones × ~1 year)
-- ✅ `data/processed_demand_data.csv` - 434,400 engineered features (ready for ML)
-- ✅ `data/predictions_test_set.csv` - Model predictions on test set
+- `data/raw_demand_data.csv` - 438,600 weather-demand records (25 zones × ~1 year)
+- `data/processed_demand_data.csv` - 434,400 engineered features (ready for ML)
+- `data/predictions_test_set.csv` - Model predictions on test set
 
 **Trained Models:**
 
-- ✅ `models/xgboost_model.json` - Primary forecasting model (~1 MB)
-- ✅ `models/prophet_[City]_[Zone].json` - 25 Prophet models for baselines
+- `models/xgboost_model.json` - Primary forecasting model (~1 MB)
+- `models/prophet_[City]_[Zone].json` - 25 Prophet models for baselines
 
 **Reports:**
 
-- ✅ `reports/metrics.csv` - XGBoost performance metrics
-- ✅ `reports/cross_validation_metrics.csv` - Prophet cross-validation results
+- `reports/metrics.csv` - XGBoost performance metrics
+- `reports/cross_validation_metrics.csv` - Prophet cross-validation results
 
 **Dashboard:**
 
-- 🌐 Open automatically at `http://localhost:8501` in your browser
+- Open automatically at `http://localhost:8501` in your browser
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/
 │
-├── 📄 EXECUTION SCRIPTS (Start here!)
-│   ├── run.py                    ← Main entry point (all-in-one)
-│   ├── run.bat                   ← Windows batch runner
-│   └── run.sh                    ← Linux/macOS runner
+├── EXECUTION SCRIPTS (Start here!)
+│   ├── run.py                    - Main entry point (all-in-one)
+│   ├── run.bat                   - Windows batch runner
+│   └── run.sh                    - Linux/macOS runner
 │
-├── 📚 DOCUMENTATION
-│   ├── README.md                 ← This file
-│   ├── QUICK_START.md            ← 5-minute quick reference
-│   ├── PROJECT_INDEX.md          ← Documentation map
-│   └── requirements.txt          ← Python dependencies
+├── DOCUMENTATION
+│   ├── README.md                 - This file
+│   ├── QUICK_START.md            - 5-minute quick reference
+│   ├── PROJECT_INDEX.md          - Documentation map
+│   └── requirements.txt          - Python dependencies
 │
-├── 🐍 SOURCE CODE (Core Logic)
+├── SOURCE CODE (Core Logic)
 │   └── src/
-│       ├── data_ingestion.py     ← Weather data + demand simulation
-│       │                           (500+ lines, OpenWeather API integration)
-│       ├── feature_engineering.py ← Feature creation & preprocessing
-│       │                           (300+ lines, 40+ features)
-│       ├── train.py              ← Model training pipeline
-│       │                          (400+ lines, XGBoost + 25 Prophet)
-│       ├── dashboard.py          ← Streamlit interactive dashboard
-│       │                          (600+ lines, maps & charts)
-│       └── lstm_colab.py         ← LSTM experimental model (Colab)
+│       ├── data_ingestion.py     - Weather data + demand simulation
+│       ├── feature_engineering.py - Feature creation & preprocessing
+│       ├── train.py              - Model training pipeline
+│       ├── dashboard.py          - Streamlit interactive dashboard
+│       └── lstm_colab.py         - LSTM experimental model (Colab)
 │
-├── 📊 GENERATED DATA (Auto-created on first run)
+├── GENERATED DATA (Auto-created on first run)
 │   └── data/
 │       ├── raw_demand_data.csv        (438.6K rows × 16 cols)
 │       ├── processed_demand_data.csv  (434.4K rows × 50+ cols)
 │       └── predictions_test_set.csv   (Test set predictions)
 │
-├── 🤖 TRAINED MODELS (Auto-created on first run)
+├── TRAINED MODELS (Auto-created on first run)
 │   └── models/
 │       ├── xgboost_model.json         (Primary model)
 │       ├── prophet_Bengaluru_*.json   (5 Prophet models)
@@ -347,14 +343,13 @@ EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/
 │       ├── prophet_Hyderabad_*.json   (5 Prophet models)
 │       └── prophet_Mumbai_*.json      (5 Prophet models)
 │
-├── 📈 EVALUATION REPORTS (Auto-created on first run)
+├── EVALUATION REPORTS (Auto-created on first run)
 │   └── reports/
 │       ├── metrics.csv                (XGBoost metrics)
 │       └── cross_validation_metrics.csv (Prophet cross-validation)
 │
-└── ⚙️ CONFIGURATION
-    └── .gitignore                 ← Files excluded from git
-
+└── CONFIGURATION
+    └── .gitignore                 - Files excluded from git
 ```
 
 ### File Descriptions
@@ -370,60 +365,50 @@ EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ### Data Pipeline
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│ 1. DATA INGESTION                                               │
-├─────────────────────────────────────────────────────────────────┤
-│ • OpenWeather API: Fetch historical weather for 25 zones        │
-│ • Synthetic Demand: Generate realistic EV charging patterns     │
-│ • Integration: Combine weather + demand into raw dataset        │
-│ Output: data/raw_demand_data.csv (438,600 rows)                │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│ 2. FEATURE ENGINEERING                                          │
-├─────────────────────────────────────────────────────────────────┤
-│ • Temporal Features: Hour, day, month, quarter, year           │
-│ • Cyclical Features: sin/cos encoding for circular variables    │
-│ • Lag Features: Previous hour/day demand patterns               │
-│ • Rolling Stats: 7-day & 30-day moving averages                │
-│ • Holiday Features: Indian public/regional holidays            │
-│ • Weather Features: Temperature, humidity, precipitation       │
-│ • Zone Features: Location-specific categorical encoding        │
-│ Output: data/processed_demand_data.csv (434,400 rows × 50 cols)│
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│ 3. MODEL TRAINING                                               │
-├─────────────────────────────────────────────────────────────────┤
-│ • XGBoost: Primary model (handles non-linear patterns)          │
-│ • Prophet: 25 zone-specific models (seasonal decomposition)     │
-│ • Cross-Validation: Time-series walk-forward validation         │
-│ • Hyperparameter Tuning: Grid search for optimal parameters     │
-│ • Evaluation: MAE, RMSE, MAPE, R² metrics                       │
-│ Output: models/ (26 JSON files), reports/metrics.csv            │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│ 4. INTERACTIVE DASHBOARD                                        │
-├─────────────────────────────────────────────────────────────────┤
-│ • Real-time Charts: Hourly demand trends                        │
-│ • Geographic Maps: Zone-level heatmaps                          │
-│ • Predictions: 24-hour forecast display                         │
-│ • Model Performance: Metrics and comparison                     │
-│ • Feature Analysis: SHAP importance plots                       │
-│ • Scenario Planning: Growth simulation controls                 │
-│ Output: http://localhost:8501 (Streamlit web app)              │
-└─────────────────────────────────────────────────────────────────┘
-```
+Stage 1: DATA INGESTION
+
+- OpenWeather API: Fetch historical weather for 25 zones
+- Synthetic Demand: Generate realistic EV charging patterns
+- Integration: Combine weather + demand into raw dataset
+- Output: data/raw_demand_data.csv (438,600 rows)
+
+Stage 2: FEATURE ENGINEERING
+
+- Temporal Features: Hour, day, month, quarter, year
+- Cyclical Features: sin/cos encoding for circular variables
+- Lag Features: Previous hour/day demand patterns
+- Rolling Stats: 7-day & 30-day moving averages
+- Holiday Features: Indian public/regional holidays
+- Weather Features: Temperature, humidity, precipitation
+- Zone Features: Location-specific categorical encoding
+- Output: data/processed_demand_data.csv (434,400 rows × 50 cols)
+
+Stage 3: MODEL TRAINING
+
+- XGBoost: Primary model (handles non-linear patterns)
+- Prophet: 25 zone-specific models (seasonal decomposition)
+- Cross-Validation: Time-series walk-forward validation
+- Hyperparameter Tuning: Grid search for optimal parameters
+- Evaluation: MAE, RMSE, MAPE, R² metrics
+- Output: models/ (26 JSON files), reports/metrics.csv
+
+Stage 4: INTERACTIVE DASHBOARD
+
+- Real-time Charts: Hourly demand trends
+- Geographic Maps: Zone-level heatmaps
+- Predictions: 24-hour forecast display
+- Model Performance: Metrics and comparison
+- Feature Analysis: SHAP importance plots
+- Scenario Planning: Growth simulation controls
+- Output: http://localhost:8501 (Streamlit web app)
 
 ---
 
-## 🤖 Model Architecture
+## Model Architecture
 
 ### XGBoost (Primary Model)
 
@@ -438,7 +423,6 @@ EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/
 
 ```
 Input Features (50+ features)
-        ↓
 ├─ Temporal: hour, day, month, year
 ├─ Cyclical: sin/cos of temporal features
 ├─ Lags: demand from t-1h, t-1d, t-7d
@@ -446,9 +430,9 @@ Input Features (50+ features)
 ├─ Weather: temp, humidity, precipitation
 ├─ Holiday: is_holiday, holiday_type
 └─ Zone: city, zone categorical encoding
-        ↓
+
 [XGBoost Gradient Boosting Regressor]
-        ↓
+
 Output: Hourly EV charging demand forecast
 ```
 
@@ -486,14 +470,14 @@ Per Zone:
 Forecast = 0.7 × XGBoost + 0.3 × Prophet_Ensemble
 
 Benefits:
-✅ Leverages strengths of both models
-✅ Reduces overfitting from individual models
-✅ More robust to market changes
+- Leverages strengths of both models
+- Reduces overfitting from individual models
+- More robust to market changes
 ```
 
 ---
 
-## 📊 Results & Performance
+## Results & Performance
 
 ### Model Evaluation Metrics
 
@@ -541,7 +525,7 @@ Top 10 Features:
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (Optional)
 
@@ -553,7 +537,7 @@ WEATHER_API_KEY=your_api_key_here
 
 # Model Parameters
 XGBOOST_PARAMS={"n_estimators": 150, "max_depth": 7}
-PROPHET_INTERVALS=80  # Uncertainty interval
+PROPHET_INTERVALS=80
 
 # Data Range
 DATA_START_DATE=2023-01-01
@@ -603,11 +587,11 @@ XGBOOST_PARAMS = {
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues & Solutions
 
-#### 1. **OpenWeather API Limit Exceeded**
+#### 1. OpenWeather API Limit Exceeded
 
 **Problem:** `OpenWeatherMap error: 429 Too Many Requests`
 
@@ -622,7 +606,7 @@ WEATHER_API_KEY=your_free_api_key
 
 - Free tier: 60 calls/minute, 1M calls/month (sufficient for this project)
 
-#### 2. **Memory Error During Training**
+#### 2. Memory Error During Training
 
 **Problem:** `MemoryError: Unable to allocate ... GB`
 
@@ -630,12 +614,12 @@ WEATHER_API_KEY=your_free_api_key
 
 ```bash
 # Reduce batch size in src/train.py
-BATCH_SIZE = 10000  # Reduce from default
+BATCH_SIZE = 10000
 
 # Or increase system virtual memory
 ```
 
-#### 3. **Dashboard Won't Launch**
+#### 3. Dashboard Won't Launch
 
 **Problem:** `ModuleNotFoundError: No module named 'streamlit'`
 
@@ -647,7 +631,7 @@ pip uninstall streamlit -y
 pip install streamlit
 ```
 
-#### 4. **Slow Model Training**
+#### 4. Slow Model Training
 
 **Problem:** Training takes >15 minutes
 
@@ -661,7 +645,7 @@ pip install streamlit
 # TRAINED_MODELS = {'xgboost': xgb_model}
 ```
 
-#### 5. **Port 8501 Already in Use**
+#### 5. Port 8501 Already in Use
 
 **Problem:** `Address already in use: ('127.0.0.1', 8501)`
 
@@ -689,18 +673,15 @@ pip install -r requirements.txt
 
 ---
 
-## 📝 Files to Exclude from Git
+## Files to Exclude from Git
 
 The `.gitignore` file is already configured to exclude:
 
-### ❌ Do NOT Push These Files
+### Do NOT Push These Files
 
 **Large Data Files:**
 
 - `data/*.csv` - Raw and processed demand data (can be regenerated)
-- `data/raw_demand_data.csv`
-- `data/processed_demand_data.csv`
-- `data/predictions_test_set.csv`
 
 **Trained Models:**
 
@@ -714,7 +695,6 @@ The `.gitignore` file is already configured to exclude:
 
 - `__pycache__/` - Python bytecode cache
 - `*.pyc`, `*.pyo` - Compiled Python files
-- `.pytest_cache/` - Test cache
 
 **Virtual Environments:**
 
@@ -724,27 +704,17 @@ The `.gitignore` file is already configured to exclude:
 
 - `.vscode/` - VS Code settings
 - `.idea/` - PyCharm settings
-- `*.swp`, `*.swo` - Editor swap files
 
 **OS-Specific Files:**
 
 - `.DS_Store` - macOS system files
 - `Thumbs.db` - Windows thumbnail cache
 
-**Other:**
-
-- `*.log` - Log files
-- `.env` - Environment variables (contains sensitive data)
-
-### ✅ Files That WILL Be Pushed
+### Files That WILL Be Pushed
 
 **Source Code:**
 
 - `src/*.py` - All Python source files
-- `src/data_ingestion.py`
-- `src/feature_engineering.py`
-- `src/train.py`
-- `src/dashboard.py`
 
 **Configuration & Scripts:**
 
@@ -760,7 +730,7 @@ The `.gitignore` file is already configured to exclude:
 
 ---
 
-## 🔄 Git Workflow
+## Git Workflow
 
 ### Initial Setup & First Push
 
@@ -810,12 +780,12 @@ git status
 git diff --cached
 
 # Verify .gitignore is working
-git check-ignore -v *  # Should show ignored files
+git check-ignore -v *
 ```
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how to contribute:
 
@@ -828,15 +798,15 @@ Contributions are welcome! Here's how to contribute:
 
 ### Contribution Areas
 
-- 🔬 **Model Improvements**: Better hyperparameters, new architectures
-- 🗺️ **New Cities/Zones**: Extend coverage to other Indian cities
-- 📊 **Dashboard Enhancements**: New visualizations, interactive features
-- 📚 **Documentation**: Improve clarity and examples
-- 🐛 **Bug Fixes**: Report and fix issues
+- Model Improvements: Better hyperparameters, new architectures
+- New Cities/Zones: Extend coverage to other Indian cities
+- Dashboard Enhancements: New visualizations, interactive features
+- Documentation: Improve clarity and examples
+- Bug Fixes: Report and fix issues
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** - see LICENSE file for details.
 
@@ -855,14 +825,14 @@ If you use this project in your research or work, please cite:
 
 ---
 
-## 📧 Contact & Support
+## Contact & Support
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/Nishant5810/EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/issues)
 - **Project Repository**: https://github.com/Nishant5810/EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities
 
 ---
 
-## 🎓 Learning Resources
+## Learning Resources
 
 Useful resources for understanding the project:
 
@@ -874,7 +844,7 @@ Useful resources for understanding the project:
 
 ---
 
-## 📊 Project Statistics
+## Project Statistics
 
 - **Lines of Code**: 1,800+ (production code)
 - **Models**: 26 (1 XGBoost + 25 Prophet)
@@ -887,7 +857,7 @@ Useful resources for understanding the project:
 
 ---
 
-## 🎉 Acknowledgments
+## Acknowledgments
 
 This project combines best practices from:
 
@@ -901,9 +871,8 @@ This project combines best practices from:
 
 <div align="center">
 
-**Made with ❤️ for India's EV Future**
+**Made with care for India's EV Future**
 
-⭐ If you find this project useful, please give it a star! ⭐
+If you find this project useful, please give it a star!
 
 </div>
-

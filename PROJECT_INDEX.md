@@ -1,6 +1,6 @@
-# 📖 PROJECT DOCUMENTATION INDEX
+# PROJECT DOCUMENTATION INDEX
 
-## 🎯 START HERE
+## START HERE
 
 ### For First-Time Users
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🚀 EXECUTION METHODS
+## EXECUTION METHODS
 
 ### Fastest (Automated)
 
@@ -27,10 +27,10 @@
 python run.py
 ```
 
-✅ Single command runs all 4 stages  
-✅ Auto-launches dashboard  
-✅ Colored progress output  
-✅ Error handling & recovery
+Single command runs all 4 stages
+Auto-launches dashboard
+Colored progress output
+Error handling & recovery
 
 ### Windows (Double-Click)
 
@@ -38,9 +38,9 @@ python run.py
 run.bat
 ```
 
-✅ No terminal knowledge needed  
-✅ Auto-detects Python  
-✅ Logs output
+No terminal knowledge needed
+Auto-detects Python
+Logs output
 
 ### Linux/macOS
 
@@ -48,9 +48,9 @@ run.bat
 ./run.sh
 ```
 
-✅ Bash automation  
-✅ Dependency checking  
-✅ Python3 compatibility
+Bash automation
+Dependency checking
+Python3 compatibility
 
 ### Manual Stage-by-Stage
 
@@ -70,23 +70,23 @@ streamlit run src/dashboard.py
 
 ---
 
-## 📁 DIRECTORY STRUCTURE
+## DIRECTORY STRUCTURE
 
 ```
 c:\projects\EV\
-│
+
 ├── EXECUTION FILES (Use these!)
-│   ├── run.py              ← Main Python runner
-│   ├── run.bat             ← Windows batch runner
-│   └── run.sh              ← Linux/macOS runner
+│   ├── run.py              <- Main Python runner
+│   ├── run.bat             <- Windows batch runner
+│   └── run.sh              <- Linux/macOS runner
 │
 ├── DOCUMENTATION
-│   ├── README.md           ← Full technical docs (15 sections)
-│   ├── QUICK_START.md      ← Quick reference (this file!)
-│   └── PROJECT_INDEX.md    ← Documentation map
+│   ├── README.md           <- Full technical docs (15 sections)
+│   ├── QUICK_START.md      <- Quick reference (this file!)
+│   └── PROJECT_INDEX.md    <- Documentation map
 │
 ├── CONFIGURATION
-│   └── requirements.txt    ← Python dependencies (13 packages)
+│   └── requirements.txt    <- Python dependencies (13 packages)
 │
 ├── SOURCE CODE (Python modules)
 │   └── src/
@@ -98,253 +98,286 @@ c:\projects\EV\
 ├── GENERATED DATA
 │   └── data/
 │       ├── raw_demand_data.csv           (438.6K rows, 16 columns)
-│       ├── processed_demand_data.csv     (434.4K rows, 75 features)
-│       └── predictions_test_set.csv      (86.9K rows, 12 columns)
+│       ├── processed_demand_data.csv     (434.4K rows, 50+ columns)
+│       └── predictions_test_set.csv      (Test predictions)
 │
 ├── TRAINED MODELS
 │   └── models/
-│       ├── xgboost_model.json            (1.2 MB - Primary model)
-│       ├── prophet_Bengaluru_*.json      (25 KB each - 25 total)
-│       └── [25 zone-specific Prophet models]
+│       ├── xgboost_model.json           (3.2 MB - Primary model)
+│       ├── prophet_Bengaluru_*.json     (25 Prophet models)
+│       └── ... (5 per city)
 │
-└── EVALUATION REPORTS
+└── REPORTS & OUTPUTS
     └── reports/
-        ├── metrics.csv                   (2 models × 4 metrics)
-        ├── cross_validation_metrics.csv  (3 folds × 4 metrics)
-        └── shap_summary.png              (Feature importance visualization)
+        ├── metrics.csv                  (XGBoost evaluation)
+        ├── cross_validation_metrics.csv (Prophet validation)
+        └── shap_summary.png             (Feature importance)
 ```
 
 ---
 
-## 📊 WHAT EACH FILE DOES
+## QUICK LINKS
 
-### Execution & Configuration
+### Setup & Configuration
 
-| File               | Purpose              | User Action                       |
-| ------------------ | -------------------- | --------------------------------- |
-| `run.py`           | Main orchestrator    | `python run.py`                   |
-| `run.bat`          | Windows launcher     | Double-click or `run.bat`         |
-| `run.sh`           | Linux/macOS launcher | `./run.sh`                        |
-| `requirements.txt` | Dependencies list    | `pip install -r requirements.txt` |
+- [Installation Steps](README.md#installation)
+- [Environment Setup](README.md#prerequisites)
+- [Dependency List](requirements.txt)
 
-### Documentation
+### Usage & Execution
 
-| File               | Content                  | Read Time |
-| ------------------ | ------------------------ | --------- |
-| `README.md`        | Everything (15 sections) | 20-30 min |
-| `QUICK_START.md`   | Quick reference          | 5 min     |
-| `PROJECT_INDEX.md` | This file (navigation)   | 3 min     |
+- [Quick Start](QUICK_START.md)
+- [Running the Project](README.md#quick-start)
+- [Manual Execution](README.md#option-2-manual-stage-by-stage)
 
-### Source Code
+### Understanding the Project
 
-| File                     | Lines | Purpose                         | Key Output                  |
-| ------------------------ | ----- | ------------------------------- | --------------------------- |
-| `data_ingestion.py`      | 500+  | Weather API + demand simulation | `raw_demand_data.csv`       |
-| `feature_engineering.py` | 300+  | Lag/rolling/cyclical features   | `processed_demand_data.csv` |
-| `train.py`               | 400+  | XGBoost + 25 Prophet models     | Models + metrics            |
-| `dashboard.py`           | 600+  | Interactive Streamlit interface | Web app @ :8501             |
+- [Project Overview](README.md#project-overview)
+- [Problem Statement](README.md#motivation--problem-statement)
+- [Features & Capabilities](README.md#features--capabilities)
+- [Technology Stack](README.md#technology-stack)
 
-### Generated Outputs
+### Architecture & Models
 
-| File                        | Size       | Rows    | Purpose                 |
-| --------------------------- | ---------- | ------- | ----------------------- |
-| `raw_demand_data.csv`       | ~100 MB    | 438,600 | Raw weather + demand    |
-| `processed_demand_data.csv` | ~200 MB    | 434,400 | ML-ready features       |
-| `predictions_test_set.csv`  | ~30 MB     | 86,900  | Model predictions       |
-| `xgboost_model.json`        | 1.2 MB     | -       | Primary ML model        |
-| `prophet_*.json`            | 25 × 25 KB | -       | Zone-specific forecasts |
+- [How It Works](README.md#how-it-works)
+- [Model Architecture](README.md#model-architecture)
+- [XGBoost Details](README.md#xgboost-primary-model)
+- [Prophet Details](README.md#prophet-baseline--validation)
 
----
+### Results & Performance
 
-## 🔄 DATA FLOW DIAGRAM
+- [Model Performance](README.md#results--performance)
+- [Evaluation Metrics](README.md#model-evaluation-metrics)
+- [Feature Importance](README.md#feature-importance-shap-analysis)
 
-```
-┌──────────────────────┐
-│  run.py (orchestrator)
-└──────────┬───────────┘
-           │
-    ┌──────▼─────────────────────────────────────┐
-    │ STEP 1: DATA INGESTION (data_ingestion.py) │
-    │ • Fetch weather from Open-Meteo API        │
-    │ • Query charging stations (OpenStreetMap)  │
-    │ • Simulate 2-year demand curves            │
-    │ • Output: 438,600 records                  │
-    └──────────┬──────────────────────────────────┘
-               │ raw_demand_data.csv
-               │
-    ┌──────────▼────────────────────────────────────────┐
-    │ STEP 2: FEATURE ENGINEERING (feature_engineering)│
-    │ • Time features (hour, day_of_week, month, etc.)  │
-    │ • Lag features (1h, 24h, 168h historical)        │
-    │ • Rolling statistics (6h, 12h, 24h, 1week)       │
-    │ • Cyclical encoding (sin/cos transforms)         │
-    │ • One-hot encoding (city, zone, zone_type)       │
-    │ • Output: 434,400 records, 75 features            │
-    └──────────┬─────────────────────────────────────────┘
-               │ processed_demand_data.csv
-               │
-    ┌──────────▼────────────────────────────────────────┐
-    │ STEP 3: MODEL TRAINING (train.py)                │
-    │ • Time-series split (80/20 train/test)           │
-    │ • XGBoost: Global model (250 estimators)         │
-    │ • Prophet: 25 zone-specific models               │
-    │ • Cross-validation: 3-fold TS-CV                 │
-    │ • SHAP explainability (300 samples)              │
-    │ • Output: Models + metrics                        │
-    └──────────┬─────────────────────────────────────────┘
-               │ xgboost_model.json
-               │ prophet_*.json (25 files)
-               │ metrics.csv
-               │
-    ┌──────────▼────────────────────────────────────────┐
-    │ STEP 4: DASHBOARD (dashboard.py)                 │
-    │ • Streamlit web interface                        │
-    │ • Interactive city/zone filtering                │
-    │ • Real-time forecasts & maps                     │
-    │ • SHAP explanations                              │
-    │ • Scenario simulators                            │
-    │ • Output: http://localhost:8501                  │
-    └────────────────────────────────────────────────────┘
-```
+### Advanced Topics
+
+- [Configuration Options](README.md#configuration)
+- [Customization Guide](README.md#customization)
+- [Troubleshooting Guide](README.md#troubleshooting)
+
+### Contributing & Support
+
+- [Contributing Guidelines](README.md#contributing)
+- [License Information](README.md#license)
+- [Contact & Support](README.md#contact--support)
 
 ---
 
-## 🎓 LEARNING PATH
+## EXECUTION TIMELINE
 
-### Beginner
+### First Run (Complete Pipeline)
 
-1. Read [QUICK_START.md](QUICK_START.md) - 5 min
-2. Run `python run.py` - 20 min
-3. Explore dashboard - 10 min
-4. Play with filters and scenarios - 10 min
+| Step          | Time        | What Happens                                |
+| ------------- | ----------- | ------------------------------------------- |
+| 1. Start      | 0s          | Execute `python run.py`                     |
+| 2. Verify     | 10s         | Check Python, dependencies, directories     |
+| 3. Data Fetch | 5-10m       | Download weather data via OpenWeather API   |
+| 4. Data Gen   | 2-3m        | Generate synthetic demand data for 25 zones |
+| 5. Features   | 2-3m        | Create 50+ engineered features              |
+| 6. XGBoost    | 3-5m        | Train primary forecasting model             |
+| 7. Prophet    | 2-3m        | Train 25 zone-specific Prophet models       |
+| 8. Reports    | 1m          | Generate evaluation metrics                 |
+| 9. Dashboard  | 5s          | Launch Streamlit web app                    |
+| **TOTAL**     | **~20 min** | Complete pipeline execution                 |
 
-### Intermediate
+### Subsequent Runs (Cached)
 
-1. Read [README.md](README.md) sections 1-5 - 15 min
-2. Review data flow diagram - 5 min
-3. Look at generated CSV files - 10 min
-4. Check model metrics in `reports/metrics.csv` - 5 min
-
-### Advanced
-
-1. Read full [README.md](README.md) - 30 min
-2. Study `src/data_ingestion.py` - 10 min
-3. Study `src/feature_engineering.py` - 10 min
-4. Study `src/train.py` - 10 min
-5. Modify hyperparameters and re-run - 20 min
-
-### Expert
-
-1. Customize data generation parameters
-2. Add new features (temperature interaction, day-of-month, etc.)
-3. Experiment with different models (LSTM, RandomForest, etc.)
-4. Deploy dashboard to cloud (Heroku, AWS, GCP)
-5. Integrate with real DISCOM data
+Since data is cached after first run, subsequent executions complete in ~8-10 minutes.
 
 ---
 
-## ✅ VERIFICATION CHECKLIST
+## COMMON WORKFLOWS
 
-Before running the project:
-
-### System Setup
-
-- [ ] Python 3.8+ installed (`python --version`)
-- [ ] Internet connection available
-- [ ] 2GB disk space free
-- [ ] 4GB RAM minimum
-
-### Project Files
-
-- [ ] `run.py` exists in root
-- [ ] `requirements.txt` exists in root
-- [ ] `src/` folder with 4 Python files
-- [ ] All source files have 0 syntax errors
-
-### Dependencies
-
-- [ ] Run: `pip install -r requirements.txt`
-- [ ] Verify: `python -c "import pandas, xgboost, prophet, streamlit"`
-
-### Ready to Execute
-
-- [ ] `python run.py` starts without errors
-- [ ] Dashboard launches at http://localhost:8501
-- [ ] Can select different cities/zones
-- [ ] All metrics display correctly
-
----
-
-## 🔗 QUICK REFERENCE
-
-### One-Liners
+### I want to see the dashboard immediately
 
 ```bash
-# Run entire pipeline
+# Fastest way to see visualizations
 python run.py
 
-# Just data generation
-python src/data_ingestion.py
-
-# Just features
-python src/feature_engineering.py
-
-# Just models
-python src/train.py
-
-# Just dashboard
+# Or if models/data already exist:
 streamlit run src/dashboard.py
-
-# Check dependencies
-pip show pandas xgboost prophet streamlit
-
-# View model metrics
-cat reports/metrics.csv
-
-# View feature importance
-cat reports/cross_validation_metrics.csv
 ```
 
-### Dashboard URLs
+### I want to retrain models with new data
 
-- Local: `http://localhost:8501`
-- Network: `http://<YOUR-IP>:8501`
-- Custom port: `streamlit run src/dashboard.py --server.port 8502`
+```bash
+# Delete cache to force data regeneration
+rm data/processed_demand_data.csv
 
-### File Locations
+# Rerun pipeline
+python run.py
+```
 
-- Data: `data/*.csv`
-- Models: `models/*.json`
-- Metrics: `reports/*.csv`
-- Plots: `reports/*.png`
+### I want to modify model parameters
+
+Edit `src/train.py`:
+
+```python
+XGBOOST_PARAMS = {
+    'n_estimators': 200,  # Increase from 150
+    'max_depth': 8,       # Increase from 7
+}
+```
+
+Then run:
+
+```bash
+python run.py
+```
+
+### I want to add a new city/zone
+
+Edit `src/data_ingestion.py`:
+
+```python
+CITIES_ZONES = {
+    'NewCity': ['Zone1', 'Zone2']
+}
+```
+
+Then run:
+
+```bash
+python run.py
+```
 
 ---
 
-## 📞 HELP & TROUBLESHOOTING
+## PROJECT COMPONENTS
 
-| Problem              | Solution                                            |
-| -------------------- | --------------------------------------------------- |
-| Python not found     | Install from https://www.python.org                 |
-| Module not found     | `pip install -r requirements.txt`                   |
-| API timeout          | Check internet; script auto-simulates               |
-| Port in use          | `streamlit run src/dashboard.py --server.port 8502` |
-| Memory error         | Reduce `n_estimators` in train.py                   |
-| Dashboard won't load | Check firewall; try `http://127.0.0.1:8501`         |
+### Data Pipeline (src/data_ingestion.py)
+
+- Fetches historical weather via OpenWeather API
+- Generates realistic EV charging demand curves
+- Combines weather + demand into raw dataset
+- Output: data/raw_demand_data.csv
+
+### Feature Engineering (src/feature_engineering.py)
+
+- Temporal encoding: Hour, day, month, year
+- Cyclical encoding: sin/cos for circular features
+- Lag features: Previous hour/day demand
+- Rolling statistics: 7-day, 30-day averages
+- Holiday indicators: Indian holidays
+- Output: data/processed_demand_data.csv
+
+### Model Training (src/train.py)
+
+- XGBoost gradient boosting model
+- 25 Prophet time-series models (one per zone)
+- Cross-validation: Walk-forward validation
+- Hyperparameter tuning
+- Output: models/_.json, reports/_.csv
+
+### Dashboard (src/dashboard.py)
+
+- Real-time demand charts
+- Geographic heatmaps
+- Model performance metrics
+- Feature importance (SHAP)
+- Scenario simulation
+- Interactive controls
 
 ---
 
-## 🎯 NEXT STEPS
+## PERFORMANCE EXPECTATIONS
 
-1. **Execute**: `python run.py`
-2. **Explore**: Dashboard at http://localhost:8501
-3. **Understand**: Read README.md sections 1-3
-4. **Customize**: Modify parameters in src/ files
-5. **Deploy**: Share dashboard with team
+### Model Accuracy
+
+- Mean Absolute Error (MAE): 15-25 kW
+- Root Mean Squared Error (RMSE): 20-35 kW
+- Mean Absolute Percentage Error (MAPE): 8-15%
+- R² Score: 0.85-0.92
+
+### Execution Speed
+
+- Data generation: 5-10 minutes (first run only)
+- Feature engineering: 2-3 minutes
+- Model training: 5-8 minutes
+- Dashboard loading: <5 seconds
+
+### Data Volume
+
+- Raw records: 438,600 demand samples
+- Features per sample: 50+
+- Cities covered: 5
+- Zones per city: 5
+- Total zones: 25
 
 ---
 
-**Version**: 1.0  
-**Created**: May 27, 2026  
-**Status**: Production Ready ✅  
-**Support**: See README.md for detailed docs
+## REQUIREMENTS
 
+### System Requirements
+
+- Python 3.8 or higher
+- 2+ GB RAM (3GB+ for comfortable operation)
+- 1 GB disk space for data and models
+- Internet connection (for weather API)
+
+### Software Dependencies
+
+- See [requirements.txt](requirements.txt) for complete list
+- 13 Python packages including:
+  - XGBoost (ML model)
+  - Prophet (Time-series)
+  - Streamlit (Dashboard)
+  - Pandas, NumPy (Data processing)
+  - SHAP (Explainability)
+
+### Optional
+
+- Git (for version control)
+- Text editor or IDE for code modification
+
+---
+
+## GETTING HELP
+
+### Common Issues
+
+**"Python not found"**
+
+- Install Python 3.8+ from python.org
+- Add Python to system PATH
+
+**"Module not found"**
+
+- Run: `pip install -r requirements.txt`
+- Ensure virtual environment is activated
+
+**"API limit exceeded"**
+
+- Get free OpenWeatherMap key from openweathermap.org
+- Add to .env file: `WEATHER_API_KEY=your_key`
+
+**"Dashboard won't open"**
+
+- Check if port 8501 is in use
+- Try: `streamlit run src/dashboard.py --server.port 8502`
+
+### More Help
+
+- See [Troubleshooting Section](README.md#troubleshooting) in README.md
+- Check GitHub Issues: https://github.com/Nishant5810/EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities/issues
+- Review code comments in src/ files
+
+---
+
+## NEXT STEPS AFTER FIRST RUN
+
+1. Explore the dashboard visualizations
+2. Check model performance metrics in reports/
+3. Review feature importance analysis
+4. Modify parameters to improve accuracy
+5. Add new cities or zones
+6. Experiment with scenario planning
+
+---
+
+## Project Repository
+
+https://github.com/Nishant5810/EV-Charging-Demand-Forecasting-for-Indian-Metro-Cities
+
+For updates, issues, and contributions, visit the repository above.
