@@ -1,0 +1,13 @@
+xgboost
+prophet
+shap
+streamlit
+folium
+streamlit-folium
+scikit-learn
+seaborn
+holidays
+matplotlib
+requests
+pandas
+numpy
